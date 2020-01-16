@@ -20,12 +20,12 @@ struct Cone {
 }
 
 class IceCreamShop {
-    var flavors: Flavor
+    var flavors: [Flavor]
     var sizes: Size
     var toppings: Cone
     var totalSales: Double
     
-    init(flavors: Flavor, sizes: Size, toppings: Cone, totalSales: Double) {
+    init(flavors: [Flavor], sizes: Size, toppings: Cone, totalSales: Double) {
         self.flavors = flavors
         self.sizes = sizes
         self.toppings = toppings
@@ -34,9 +34,15 @@ class IceCreamShop {
 }
 
 func listTopFlavors() {
-    
+    var iceCreamShop: IceCreamShop?
+    guard let newIceCreamShop = iceCreamShop else { return }
+    for flavors in newIceCreamShop.flavors {
+        if flavors.rating >= 4 {
+            print("Our top flavors are \(flavors.name)")
+        }
+    }
 }
 
-func orderCone(flavor: Cone, topping: Cone, size: Cone) -> Cone? {
+func orderCone(cone: Cone) -> Cone? {
     let newCone = Cone(flavor: "Chocolate", topping: "Cookie Dough", size: .medium)
 }
