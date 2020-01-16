@@ -32,3 +32,11 @@ class IceCreamShop {
         self.totalSales = totalSales
     }
 }
+
+func listTopFlavors() {
+    
+}
+
+func orderCone(flavor: Cone, topping: Cone, size: Cone) -> Cone? {
+    let newCone = Cone(flavor: "Chocolate", topping: "Cookie Dough", size: .medium)
+}
