@@ -19,4 +19,16 @@ struct Cone {
     }
 }
 
-
+class IceCreamShop {
+    var flavors: Flavor
+    var sizes: Size
+    var toppings: Cone
+    var totalSales: Double
+    
+    init(flavors: Flavor, sizes: Size, toppings: Cone, totalSales: Double) {
+        self.flavors = flavors
+        self.sizes = sizes
+        self.toppings = toppings
+        self.totalSales = totalSales
+    }
+}
