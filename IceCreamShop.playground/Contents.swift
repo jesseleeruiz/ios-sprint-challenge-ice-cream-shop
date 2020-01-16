@@ -3,4 +3,10 @@ struct Flavor {
     let rating: Int
 }
 
+enum Size {
+    case small
+    case medium
+    case large
+}
+
 
