@@ -3,10 +3,10 @@ struct Flavor {
     let rating: Int
 }
 
-enum Size {
-    case small
-    case medium
-    case large
+enum Size: Double {
+    case small = 3.99
+    case medium = 4.99
+    case large = 5.99
 }
 
 struct Cone {
